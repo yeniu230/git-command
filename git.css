@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 960px;
+    margin: auto
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #6fd3cc;
+    padding: 10px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 33.3%;
+    color: #fff;
+}
+
+.code {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    line-height: 0.3em;
+}
+
+.remark {
+    font-size: 14px;
+    font-style: italic;
+    color: #998;
+}
+
+h2 {
+    color: #444;
+    font-size: 18px;
+}
+
+.small {
+    font-size: 14px;
+}

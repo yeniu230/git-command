@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>git command</title>
+    <link rel="stylesheet" href="git.css">
+  </head>
+  <body>
+      <div class="content">
+          <header>
+            <nav>
+              <ul>
+                <li class="first">Git环境配置</li>
+                <li class="second">Git命令</li>
+                <li class="third">Shell</li>
+              </ul>
+            </nav>
+          </header>
+          <main id="configure">
+            <section>
+              <article class="chapter">
+                <h2>初次配置git</h2>
+                <p class="small">如果使用了 --global 选项，那么该命令只需要运行一次，因为之后无论你在该系统上做任何事情， Git 都会使用那些信息。 当你想针对特定项目使用不同的用户名称与邮件地址时，可以在那个项目目录下运行没有 --global 选项的命令来配置。</p>
+                <div class="code">
+                  <p class="remark"># 设置你的 Git 用户名</p>
+                  <p>git config --global user.name "Niu Ye"</p>
+                  <br>
+                  <p class="remark"># 设置你的 Git 邮箱</p>
+                  <p>git config --global user.email "johndoe@qq.com"</p>
+                  <br>
+                  <p class="remark"># 确保 Git 输出内容带有颜色标记</p>
+                  <p>git config --global color.ui auto</p>
+                  <br>
+                  <p class="remark"># 对比显示原始状态</p>
+                  <p>git config --global merge.conflictstyle diff3</p>
+                  <br>
+                  <p>git config --list</p>
+                </div>
+              </article>
+              <article class="chapter">
+                <h2>文本编辑</h2>
+                <div class="code">
+                    <p class="remark"># Atom Editor 设置</p>
+                    <p>git config --global core.editor "atom --wait"</p>
+                    <br>
+                    <p class="remark"># Sublime Text 设置</p>
+                    <p>git config --global core.editor "C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"</p>
+                </div>
+              </article>
+              <article class="chapter">
+                <h2>git版本更新</h2>
+                <div class="code">
+                    <p class="remark"># 使用git来获取git的升级</p>
+                    <p>git clone git://git.kernel.org/pub/scm/git/git.git</p>
+              </article>
+            </section>
+          </main>
+      </div>
+  </body>
+</html>
